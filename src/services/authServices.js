@@ -12,7 +12,7 @@ export const loginUser = async (credentials) => {
 };
 
 export const getMe = async () => {
-    const response = await protectedInstance.get('/auth/getMe');
+    const response = await protectedInstance.get('/auth/me');
     return response.data;
 };
 
